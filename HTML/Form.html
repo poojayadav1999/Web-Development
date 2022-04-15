@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+
+        <h1 style="color:aliceblue;Font-size:50px;background-color:black;"><i>Registration Form</i></h1>
+        
+        <form action="data.php" target="_top">
+            <fieldset>
+                <legend style="color:blue;font-size:30px;">User Personal Information</legend>
+            <label for="Firstname">Firstname : </label>
+            <input id="Firstname" type="text" name="Firstname" placeholder="Firstname"> <br><br>
+            
+            <label for="Middlename">Middlename : </label>
+            <input id="Middlename" type="text" name="Middlename" placeholder="Middlename"><br><br> 
+
+            <label for="Lastname">Lastname : </label>
+            <input id="Lastname" type="text" name="Lastname" placeholder="Lastname"><br><br>
+            
+            <label for="MobileNo">Mobile No : </label>
+            <input id="MobileNo" type="text" name="MobileNo" placeholder="MobileNo" maxlength="10"> <br><br>
+
+            <label for="DOB">Date of Birth : </label>
+            <input id="DOB" type="date" name="DOB" placeholder="DOB"> <br><br>
+
+            <label for="Gender">Gender : </label>
+            <input id="Gender" type="radio" name="Gender">Male 
+            <input id="Gender" type="radio" name="Gender">Female <br><br>
+
+            <label for="Password">Password : </label>
+            <input id="Password" type="Password" name="Password" placeholder="Password"> <br><br>
+
+            <label for="Subject">Subject : </label>
+            <input id="Marathi" type="checkbox" name="Marathi">Marathi
+            <input id="English" type="checkbox" name="English">English
+            <input id="Maths"   type="checkbox" name="Maths">Maths <br><br>
+
+           
+            <label for="Course">Course : </label>
+            <select>
+            <option>C language</option>
+            <option>Java</option>
+            <option>PHP</option>
+            </select> <br><br> 
+
+            <label for="Address">Address : </label>
+            <textarea rows="2" cols="20"></textarea> <br><br>
+
+            <input Id="Submit" type="Submit" name="Submit">
+            <input Id="Reset" type="Reset" name="Reset">
+            
+            </fieldset>
+            </form>
+    </body>
+</html>
