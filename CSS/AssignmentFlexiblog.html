@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Flexiblog</title>
+        <style>
+            .main1{
+                    border:1px solid;
+                    height: 2000px;
+                    
+            }
+            header{
+                    border:1px solid;
+                    height: 100px;
+            }
+            header>div{
+                    display:inline-block;
+                   
+            }
+            
+            .a1{
+                  margin-left: 100px;
+                  margin-right: 300px;
+                  font-size: 30px;
+                  padding-top:5px;
+
+            }
+            .a2{
+                 border:1px solid;
+                 margin-left: 150px;
+                 margin-right: 250px;
+                 background-color: gray;
+                  height: 30px;
+                 
+                 padding: 5px;
+            }
+            .a3{
+                 margin: 30px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            header>.a3:hover{
+                              border:1px solid;
+                              height: 35px;
+                              background-color:antiquewhite;
+            }
+            section{
+                     border: 1px solid;
+                     height: 100px;
+                     background-color:antiquewhite;
+            }
+            section>div{
+                         display: inline-block;
+                         text-align: center;
+            }
+            .one{
+                   border:1px solid;
+                   height:50px ;
+                   width:200px;
+                   padding: 10px;
+                   margin: 10px;
+                   text-align: center;
+                   margin-left: 100px;
+                   border-radius: 10px;
+            }
+            .mid{
+                   border: 1px solid;
+                   height: 400px;
+                   position: relative;
+                   background-color:antiquewhite;
+            }
+            .mid1{
+                   border: 1px solid red;
+                   height: 400px;
+                   width:750px;
+                   position: absolute;
+            }
+            .bbb{
+                  background-color:aquamarine;
+                  width: 120px;
+                  height: 30px;
+                  margin-left: 100px;
+                  margin-top: 50px;
+                  text-align: center;
+                  padding: 5px;
+            }
+            .ppp{
+                  margin-left: 100px;
+                  font-size: 30px;
+                 
+            }
+            .rrr{
+                  margin-left: 100px;
+            }
+            .mid2{
+                  border: 1px solid green;
+                  height: 400px;
+                  width: 600px;
+                  position: absolute;
+                  left:700px; 
+            }
+            .ddd{
+                  border: 1px solid;
+                  height: 350px;
+                  width: 300px;
+                  position: absolute;
+                  left:100px;
+                  top:20px;
+                  border-radius: 5px;
+            }
+            .right1{   
+                     border: 1px solid;
+                      height: 40px;
+                      width: 104px;
+                      position: absolute;
+                      left:680px;
+                      top:100px;
+                     text-align:center;
+                     padding: 5px;
+                     font-size: 15px;
+                     background-color: aliceblue;
+            }
+            .right2{
+                border: 1px solid;
+                      height: 40px;
+                      width: 104px;
+                      position: absolute;
+                      left:680px;
+                      top:160px;
+                     text-align:center;
+                     padding: 5px;
+                     font-size: 15px;
+                     background-color: aliceblue;
+            }
+            .center{
+                     border: 1px solid blue;
+                     height: 400px;
+                     position: relative;
+                     background-color:antiquewhite;
+            }  
+            .center1{
+                      border: 1px solid;
+                      height: 300px;
+                      width: 400px;
+                      margin: 40px;
+                      position: absolute;
+                      border-radius: 10px;
+            }
+            .center2{
+                      border: 1px solid;
+                      height: 300px;
+                      width: 400px;
+                      margin: 10px;
+                      position: absolute;
+                      left: 430px;
+                      margin: 40px;
+                      margin-left: 100px;
+                      border-radius: 10px;
+            }
+            .center3{
+                      border: 1px solid;
+                      height: 300px;
+                      width: 400px;
+                      margin: 10px;
+                      position: absolute;
+                      left: 850px;
+                      margin: 40px;
+                      margin-left: 150px;
+                      border-radius: 10px;
+            }
+            .c1{
+                  border: 1px solid;
+                  width: 180px;
+                  height: 230px;
+                  margin: 20px;
+                  position: absolute;
+                  border-radius: 5px;
+            }
+            .c2{
+                  margin: 20px;
+                  position: absolute;
+                  left:200px ;
+                  top:30px;
+                  font-size: 18px;
+                  padding-top: 25px;
+
+            }
+            .set{
+                 border: 1px solid aqua;
+                 height: 900px;
+                 background-color: antiquewhite;
+            }
+            .yyy{
+                  margin-left: 100px;
+                  font-size: 30px;
+            }
+            .set1{
+                   border: 1px solid red;
+                   height: 350px;
+                   position: relative;
+            }
+            .test1{
+                   border: 1px solid;
+                   height: 350px;
+                   width: 300px;
+                   position: absolute;
+                   margin-left: 200px;
+                   background-color: white;
+                   border-radius: 5px;
+            }
+            .test2{
+                   border: 1px solid;
+                   height: 350px;
+                   width: 300px;
+                   position: absolute;
+                   margin-left: 600px;
+                   background-color: white;
+                   border-radius: 5px;
+            }
+            .test3{
+                   border: 1px solid;
+                   height: 350px;
+                   width: 300px;
+                   position: absolute;
+                   margin-left: 1000px;
+                   background-color: white;
+                   border-radius: 5px;
+            }
+            .h1{
+                 border:1px solid;
+                 height: 40px;
+                 width: 140px;
+                 margin-left: 10px;
+                 text-align: center;
+                 background-color: aquamarine;
+            }
+            .h2{
+                 text-align: center;
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .h3{
+                 margin-top: 40px;
+                 text-align: center;
+            }
+            .h4{
+                 text-align: center;
+            }
+            .step{
+                   border:1px solid midnightblue;
+                   height: 400px;
+                   position: relative;
+            }
+            .step1{
+                  margin-left: 100px;
+                  font-size: 30px;
+            }
+            .last1{
+                    border: 1px solid;
+                    height: 300px;
+                    width: 300px;
+                    position: absolute;
+                    left:200px;  
+                    bottom: 10px;
+                    border-radius: 10px;
+                    background-image: url(../Images/backgroundimg.webp);
+            }
+            .last2{
+                    border: 1px solid;
+                    height: 300px;
+                    width: 300px;
+                    position: absolute;
+                    left:600px;  
+                    bottom: 10px;
+                    border-radius: 10px;
+            }
+            .last3{
+                    border: 1px solid;
+                    height: 300px;
+                    width: 300px;
+                    position: absolute;
+                    left:1000px;  
+                    bottom: 10px;
+                    border-radius: 10px;
+                    background-color: white;
+            }
+            .ooo{
+                  border: 1px solid;
+                  height: 30px;
+                  width: 200px;
+                  margin: 10px;
+                  border-radius: 5px;
+                  background-color: aquamarine;
+            }
+            .hii{
+                  font-size: 25px;
+                  margin-top: 60px;
+                  color: white;
+                  margin-left: 10px;
+            }
+            .l1{
+                 border: 1px solid;
+                 height: 230px;
+                 width: 120px;
+                 margin: 20px;
+                 margin-top: 30px;
+                 position: absolute;
+            }
+            .l2{
+                
+                 position: absolute;
+                 left:150px;
+                 top:60px;
+            }
+            .end1{
+                   border: 1px solid;
+                   height: 40px;
+                   width: 90px;
+                   margin-left: 20px;
+                   background-color: aquamarine;
+                  
+            }
+            .end2{
+                   text-align: center;
+            }
+
+
+            .main2{
+                    border: 1px solid;
+                    height: 1000px;
+            }
+            .page{
+                   border: 1px solid red;
+                   height: 400px;
+                   margin: 5px;
+                   position: relative;
+            }
+            .page1{
+                    border:1px solid green;
+                    height: 350px;
+                    width: 300px;
+                    margin: 10px;
+                    position: absolute;
+                    left:200px;
+                    top:10px;
+            }
+            .page2{
+                    border:1px solid green;
+                    height: 350px;
+                    width: 300px;
+                    margin: 10px;
+                    position: absolute;
+                    left:600px;
+                    top:10px;
+            }
+            .page3{
+                    border:1px solid green;
+                    height: 150px;
+                    width: 300px;
+                    margin: 10px;
+                    position: absolute;
+                    left:1000px;
+                    top:10px;
+            }
+            .page4{
+                    border:1px solid green;
+                    height: 150px;
+                    width: 300px;
+                    position: absolute;
+                    left:1010px;
+                    top:200px;
+            }
+            .f1{
+                 border: 1px solid;
+                 height: 30px;
+                 width: 100px;
+                 
+            }
+         
+          
+        </style>
+    </head>
+    <body>
+        <div class="main1">
+          <header>
+               <div class="a1"><img src="../Images/logo.png" height="30px" width="30px">FlexiBlog</div>
+               <div class="a2">
+                   <input type="text" name="Discover,news,articles and more" placeholder="Discover,news,articles and more"></div>
+               <div class="a3"><a href="../CSS/cssfloat.html">Home</a></div>
+               <div class="a3"><a href="../CSS/flex.html">Our Team</a></div>
+               <div class="a3"><a href="../CSS/boxmodel.html">Contact</a></div>
+          </header>
+          
+          <section>
+                  <div class="one">Energy and Environment</div>
+                  <div class="one">Technology</div>
+                  <div class="one">Space</div>
+                  <div class="one">Physics and Mathematics</div>
+          </section>
+
+    <div class="mid">
+
+            <div class="mid1">
+                <p class="bbb"><a href="../CSS/boxmodel.html">Technology</a></p>
+                <p class="ppp"><b>Using Satellites and AI <br>
+                    To Help Fight Poverty In <br>
+                     Africa </b>
+                </p>
+                <p class="rrr">Primo in altis pelle alumnae lorem markdownum obvis in seque opus,est bicorni forte;laeva....</p>
+            </div>
+
+                <div class="mid2">
+                    <div class="ddd">
+                        <img src="../Images/238fb8c5fdef9a88acfda9ea09ecf621.jpg" height="350px" width="300px"></div>
+                        <p class="right1"><img src="../Images/logo2.jpg" height="20px" width="20px">Demos</p>
+                        <p class="right2"><img src="../Images/logo2.jpg" height="20px" width="20px">Buy Now</p>
+                </div>
+           </div>
+
+           <div class="center">
+
+               <div class="center1">
+                   <div class="c1"><img src="../Images/870969-antique-books-bookshelf-desks-library-objects.jpg" height="230px" 
+                    width="180px"></div>
+                   <div class="c2">Lorem ipsum dolor<br>
+                     sit amet consectetur<br>
+                      adipisicing elit. </div>
+               </div>
+
+               <div class="center2">
+                <div class="c1">
+                    <img src="../Images/naturepic1.jpg" height="230px" 
+                    width="180px">
+                </div>
+                <div class="c2">Lorem ipsum dolor<br>
+                    sit amet consectetur<br>
+                     adipisicing elit. </div>
+               </div>
+
+               <div class="center3">
+                <div class="c1">
+                    <img src="../Images/naturepic2.jpg" height="230px" 
+                    width="180px">
+                </div>
+                <div class="c2">Lorem ipsum dolor<br>
+                    sit amet consectetur<br>
+                     adipisicing elit. </div>
+               </div>
+           </div>
+
+           <div class="set">
+                <p class="yyy">Editor's Pick</p>
+                <div class="set1">
+                    <div class="test1">
+                        <p class="h1"><b>Energy and Environment</p>
+                        <p class="h2">How to Turn Your Lawn<br>
+                            Into A Wildflower Garden</b>
+                        </p>
+                        <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             At, corrupti, repellat quasi, maxime assumenda ratione asperiores 
+                        </p>
+                        <p class="h4"><img src="../Images/personimg.jpg" height="80px" width="80px"><br>
+                            Jane Smith<br>
+                            April 16,2020.
+                        </p>
+                    </div>
+
+                    <div class="test2">
+                        <p class="h1"><b>Energy and Environment</p>
+                            <p class="h2">How to Turn Your Lawn<br>
+                                Into A Wildflower Garden</b>
+                            </p>
+                            <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 At, corrupti, repellat quasi, maxime assumenda ratione asperiores 
+                            </p>
+                            <p class="h4"><img src="../Images/personimg.jpg" height="80px" width="80px"><br>
+                                Jane Smith<br>
+                                April 16,2020.
+                            </p>
+                    </div>
+                    <div class="test3">
+                        <p class="h1"><b>Physics and Mathematics</p>
+                            <p class="h2">How to Turn Your Lawn<br>
+                                Into A Wildflower Garden</b>
+                            </p>
+                            <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 At, corrupti, repellat quasi, maxime assumenda ratione asperiores 
+                            </p>
+                            <p class="h4"><img src="../Images/personimg.jpg" height="80px" width="80px"><br>
+                                Jane Smith<br>
+                                April 16,2020.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <p class="step1">Whats New?</p>
+                    <div class="last1">
+                         <p class="ooo">Physics and Mathematics</p> 
+                         <p class="hii">Astronomers Detect Most<br>
+                            Energetic Outflow from a <br>
+                            Distant Qasar
+                        </p>
+                    </div>
+
+                    <div class="last2"><img src="../Images/beachimg.jpg" height="300px" width="300px"></div>
+
+                    <div class="last3">
+                        <div class="l1"><img src="../Images/naturepic2.jpg" height="230px" width="120px"></div>
+                        <div class="l2">
+                            <p class="end1">Energy and Environment</p>
+                            <p class="end2"><b>Can Renewable<br>
+                                Energy Really Replace<br>
+                                Fossil Fuels</b>
+                            </p>
+                            <p style="text-align: center;">Steve Grant</p>
+                        </div>
+                    </div> 
+                </div>
+           </div>
+   </div> <br>
+
+
+             <div class="main2">
+                <div class="page">
+                     <div class="page1">
+                         <p class="f1">Technology</p>
+                     </div>
+                     <div class="page2"></div>
+                     <div class="page3"></div>
+                     <div class="page4"></div>
+                </div>
+
+
+             </div>
+    </body>
+</html>

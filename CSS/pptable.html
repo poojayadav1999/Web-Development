@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables in css</title>
+    <style>
+        table.one{
+            border-collapse: collapse;
+            border-spacing: 20px;
+        }
+        table.two{
+            border-collapse: separate;
+            border-spacing: 20px ;
+        }
+        
+        #yyy{
+              border-style: dashed;
+              
+              border-width: 5px;
+              padding:10px;
+             
+            
+            }
+         #rrr{
+             border-style: groove;
+             border-width: 5px;
+             
+         } 
+         #fff{
+             border-style: dotted;
+             border-width: 4px;
+             padding: 10pxs;
+             
+         } 
+         #aaa{
+             border-style: groove;
+             border-width: 5px;
+             padding: 10px;
+             
+         } 
+        
+
+        </style>
+</head>
+<body>
+    <table class="one">
+    <tr>
+        <caption>collapse border example</caption>
+        <td id="yyy">cell A collapse example</td> 
+        <td id="rrr">cell B collapse example</td>
+    </tr>
+</table>
+<br>
+
+    <table class="two">
+        <tr>
+            <caption>seprate border example</caption>
+            <td id="fff">cell c collapse example</td>
+            <td id="aaa">cell d collapse example</td>
+        </tr>
+    </table>
+      <br>
+
+
+     
+</body>
+</html>

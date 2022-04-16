@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment using Flex</title>
+        <style>
+            .main{
+                   border:1px solid;
+                   height: 1000px;
+                   width: 1500px;
+                   margin-left: 10px;
+                   
+            }
+            header{
+                    border:1px solid;
+                    height: 100px;
+                    width:1450px;
+                    margin-left: 25px;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: cornflowerblue;
+                    font-style: italic;
+            }
+            header>p{
+                       font-size: 50px;
+                      
+
+            }
+            .new{
+                   border:1px solid red ;
+                   height: 600px;
+                   width:1450px;
+                   margin-left: 25px;
+                   display: flex;
+                   flex-direction:row;
+            }
+            .side{
+                     border:1px solid;
+                     height: 600px;
+                     width: 90px;
+                     flex-grow: 1;
+                     background-color:brown;
+                     
+                 }
+             a{
+                  text-decoration: none;
+             }  
+             .side>.side1>a{
+                       color: white;
+                      
+             }
+             .side1>a:hover{
+                                    background-color: bisque;
+                                    
+             }  
+            .side1{
+                    border-bottom: 2px solid;
+                    margin-top: 50px;
+                    text-align: center;
+                    font-size: 22px;
+            
+            }
+            .set{
+                     border:1px solid;
+                     height: 600px;
+                     width: 800px;
+                     flex-grow: 4;
+                     background-color:bisque;
+                     
+            }
+            .first{
+                    border: 1px solid;
+                    height: 250px;
+                    width:800px;
+                    margin: 40px; 
+                    margin-left: 200px;
+                    display: flex;
+                    flex-direction:row;
+                    justify-content:space-evenly;
+                    align-items: center; 
+            }
+            .one{
+                  border: 1px solid;
+                  height: 200px;
+                  width: 200px;
+                  
+            }
+            .second{
+                    border: 1px solid;
+                    height: 250px;
+                    width:800px;
+                    margin: 40px;
+                    margin-left: 200px;
+                    display:flex;
+                    justify-content: space-evenly;
+                    align-items:center;
+            }
+            .two{
+                  border: 1px solid;
+                  height: 200px;
+                  width: 200px;
+                  
+                   }
+           
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <p><b>Bazar</b></p>
+            </header>
+            
+            <div class="new">
+            <div class="side">
+                <div class="side1"><a href="cssfloat.html">About</a></div>
+                <div class="side1"><a href="cssfloat.html">Address</a></div>
+                <div class="side1"><a href="cssfloat.html">Contact Us</a></div>
+                <div class="side1"><a href="cssfloat.html">Details</a></div>
+                <div class="side1"><a href="cssfloat.html">Feedback</a></div>
+               </div>
+
+
+                <div class="set">
+
+                   <div class="first">
+                       <div class="one"></div>
+                       <div class="one"></div>
+                       <div class="one"></div>
+                   </div>
+
+                   <div class="second">
+                    <div class="two"></div>
+                    <div class="two"></div>
+                    <div class="two"></div>
+                </div>
+
+                </div>
+
+            
+         </div>
+
+           
+        </div>
+    </body>
+</html>

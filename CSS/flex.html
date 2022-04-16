@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        header>p{
+            font-size: 25px;
+            color: white;
+        }
+        #container{
+          
+            display: flex;
+            flex-direction: row;
+        }
+        #container>#sidebar,main{
+           
+        }
+        #sidebar{
+            flex-grow: 1;
+            border: 1px solid gray;
+        }
+        main{
+            flex-grow: 12;
+        }
+        a{
+            text-decoration: none;
+            color:brown;
+            font-size: 20px;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        li{
+            padding: 10px;
+            padding-top: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .product{
+          
+            margin: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .items{
+            height: 200px;
+            width: 200px;
+            border: 1px solid orange;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><p>Electronics</p></header>
+    <section id="container">
+        <section id="sidebar">
+            <ul>
+                <li><a href="#">Laptop</a>
+                </li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Laptop</a></li>
+            </ul>
+        </section>
+        <main>
+            <div class="product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

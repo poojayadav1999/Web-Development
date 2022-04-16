@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Border image</title>
+        <style>
+            #ppp{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image-source: url(../../borderimage.png);
+               
+                border-image-repeat:round;
+                border-image-slice: 30;
+                border-image-width: 10px;
+            }
+            #yyy{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image-source: url("../../borderimage2.png");
+                border-image-repeat: round;
+                border-image-slice: 40;
+                border-width: 10px;
+            }
+            #ttt{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image-source: url("../../borderimage3.png");
+                border-image-repeat: round;
+                border-image-slice: 40;
+                border-width: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p id="ppp" style="color:blue;font-family:cursive;font-size:30px;text-align:center">welcome to java programming</p>
+        <p id="yyy" style="color:red;font-family:serif;font-size:50px;text-align:center">Welcome to C programming language</p>
+        <p id="ttt" style="color:darkgoldenrod;background-color:crimson;font-size:50px;text-align: center;">welcome to cascading style sheet</p>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment using flex</title>
+        <style>
+            .main{
+                   border:1px solid;
+                   height: 900px;
+            }
+            header{
+                   border:1px solid;
+                   height: 100px;
+            }
+            .menu{
+                   border: 1px solid red;
+                   height: 750px;
+                   display: flex;
+            }
+            .contain{
+                     border: 1px solid green;
+                     height: 700px;
+                     width: 1350px; 
+                     flex-grow: 10;
+                     display: flex;
+                     justify-content: space-around;
+            }
+            .sidebar{
+                      border: 1px solid blue;
+                      height: 700px;
+                      width:200px;
+                      flex-grow: 1; 
+                      border-bottom: 2px solid;
+                      
+            }
+            .one{
+                  border:1px solid;
+                  height: 600px;
+                  width: 300px;
+                  margin-top: 40px;
+                  display: flex;
+                  flex-direction:column;
+                  align-items: center;
+                  justify-content: space-around;
+                  
+            }
+            .aaa{
+                 border:1px solid red;
+                 height: 100px;
+                 width: 100px;
+            }
+            .side1{
+                    border-bottom: 2px solid;
+                    height: 50px;
+                    text-align: center;
+                    padding-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                font-size: 18px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+
+            <header></header>
+            
+             <div class="menu"> 
+                <div class="contain">
+
+                    <div class="one">
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                    </div>
+
+                    <div class="one">
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                    </div>
+
+                    <div class="one">
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                        <div class="aaa"></div>
+                    </div>
+                </div>
+
+                    <div class="sidebar">
+                        <div class="side1"><a href="../CSS/cssfloat.html">Home</a></div>
+                        <div class="side1"><a href="../CSS/cssfloat.html">About</a></div>
+                        <div class="side1"><a href="../CSS/cssfloat.html">Contact Us</a></div>
+                        <div class="side1"><a href="../CSS/cssfloat.html">Details</a></div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </body>
+</html>
