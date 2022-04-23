@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex prop</title>
+        <style>
+            .main{
+                   border: 1px solid;
+                   display: flex; 
+            }
+            .first{
+                   border: 1px solid red;
+                   height: 300px;
+                   width: 300px;
+                   margin: 10px;
+            } 
+            .a{
+                        order: 3;
+            }  
+            .b{
+                        order: 4;
+            } 
+            .c{
+                        order: 1;
+            } 
+            .d{
+                        order: 2;
+            } 
+             
+            .dot{
+                   border: 1px solid;
+                   display: flex;
+                   margin-top: 20px;
+            } 
+            .second{
+                     border: 1px solid green;
+                     height: 300px;
+                     margin: 10px;
+                      }
+             .aa{
+                  flex-grow: 2;
+             }
+             .bb{
+                  flex-grow: 1;
+             }
+             .cc{
+                  flex-grow: 5;
+             }
+             .dd{
+                  flex-grow: 1;
+             }
+
+             .new{
+                   border: 1px solid;
+                   display: flex;
+                   margin:20px;
+             }
+             .third{
+                     border: 1px solid red;
+                     height: 200px;
+                     width: 200px;
+                     margin: 10px;
+             }
+             .bbb{
+                   flex-shrink: 4;
+             }
+             .hey{
+                   border: 1px solid;
+                   display: flex;
+                   margin: 20px;
+             }
+             .four{
+                    border: 1px solid red;
+                    height: 300px;
+                    width: 300px;
+                    margin: 20px; 
+             }
+             .kk{
+                  flex-basis: 500px;
+             }
+             .old{
+                   border: 1px solid;
+                   display: flex;
+                   margin-top: 20px;
+             }
+             .five{
+                    border: 1px solid green;
+                    height: 200px;
+                    width: 200px;
+                    margin: 20px;
+             }
+             .set{
+                   flex:3;
+             }
+        </style>
+    </head>
+    <body>
+    
+        <div class="main">
+            <div class="first a">1</div>
+            <div class="first b">2</div>
+            <div class="first c">3</div>
+            <div class="first d">4</div>
+        </div>
+
+        <div class="dot">
+            <div class="second aa"></div>
+            <div class="second bb"></div>
+            <div class="second cc"></div>
+            <div class="second dd"></div>
+        </div>
+
+        <div class="new">
+            <div class="third"></div>
+            <div class="third bbb"></div>
+            <div class="third"></div>
+            <div class="third"></div>
+        </div>
+
+        <div class="hey">
+            <div class="four"></div>
+            <div class="four"></div>
+            <div class="four kk"></div>
+            <div class="four"></div>
+        </div>
+
+        <div class="old">
+            <div class="five"></div>
+            <div class="five set"></div>
+            <div class="five"></div>
+            <div class="five"></div>
+        </div>
+    </body>
+</html>

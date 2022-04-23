@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query</title>
+        <style>
+            .main{
+                   display: flex;
+                   height: 100px;
+            }
+            article{
+                     background-color: lightcoral;
+            }
+            nav{
+                  background-color: lightblue;
+            }
+            nav,article{
+                         flex-grow: 1;
+            }
+            @media screen and (min-width:800px) {
+                .main{
+                       flex-direction:row;
+                }
+            }
+            @media screen and (max-width:800px) {
+                .main{
+                       flex-direction:column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <article>Content</article>
+            <nav>link</nav>
+        </div>
+    </body>
+</html>

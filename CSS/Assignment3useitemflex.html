@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment using flex and Items</title>
+
+        <style>
+            .main{
+                   border:1px solid;
+                  
+                  
+            }
+            header{
+                    border: 1px solid;
+                    width: 1450px;
+                    height: 100px;
+                    margin:20px;
+                   
+            }
+            .new{
+                   border: 1px solid;
+                   
+                   margin: 20px;
+                   display: flex;
+                   justify-content: space-evenly;
+            }
+            .one{
+                  border:1px solid red;
+                  height: 300px;
+                  width: 300px;
+                  margin: 10px;
+                 
+            }
+            .a{
+                flex-grow: 2; 
+            }
+            .b{
+                flex-grow: 5; 
+            }
+            .c{
+                flex-grow: 2; 
+            }
+            .sub{
+                   border: 1px solid;
+                   margin: 20px;
+                   
+                   display: flex;
+                   
+            
+            }
+            .row{
+                  border: 1px solid red;
+                  height: 700px;
+                  margin: 5px;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 6;
+            }
+            .two{
+                  border:1px solid red;
+                 
+                  
+                  margin: 10px;
+                 
+            } 
+            .aaa{
+                  flex-grow: 10;
+            }
+            .rrr{
+                  flex-grow: 5;
+            }
+            .bbb{
+                  flex-grow: 1;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="main">
+            <header></header>
+
+            <div class="new">
+                 <div class="one a"></div>
+                 <div class="one b"></div>
+                 <div class="one c"></div> 
+            </div>
+
+            <div class="sub">
+               <div class="row">
+                   <div class="two aaa"></div>
+                   <div class="two rrr"></div>
+                   <div class="two bbb"></div>
+               </div>
+               <div class="row">
+                <div class="two aaa"></div>
+                <div class="two rrr"></div>
+                <div class="two bbb"></div>
+               </div>
+               <div class="row">
+                <div class="two aaa"></div>
+                <div class="two rrr"></div>
+                <div class="two bbb"></div>
+               </div>
+            </div>
+        </div>
+    </body>
+</html>

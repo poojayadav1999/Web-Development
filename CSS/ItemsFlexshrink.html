@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item Flex Shrink</title>
+     <style>
+      section{
+          display:flex;
+          border: 1px solid red;
+      }
+      section>div{
+          border: 1px solid green;
+          margin: 10px;
+          height: 200px;
+          width: 200px;
+      }
+      .div3{
+          flex-shrink: 3;
+      }
+     </style>
+</head>
+ <body>
+    <section>
+        <div></div>
+        <div></div>
+        <div class="div3"></div>
+        <div></div>
+    </section>
+ </body>
+</html>

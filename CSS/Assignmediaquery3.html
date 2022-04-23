@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query</title>
+        <style>
+            .main{
+                border: 1px solid;
+                height: 1000px;
+                display: flex;   
+            }
+            .one{
+                   border: 1px solid red;
+                   height: 500px;
+                   width: 150px;
+            }
+            .menu{
+                   color: red;
+                   border: 1px solid;
+                   height: 100px;
+                   width: 400px; 
+            }
+            @media screen and (max-width:800px) {
+                .main{
+                       display:flex;
+                       flex-direction: column;
+                       }
+                .menu{
+                        color: blue;
+                }       
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="one"></div>
+            <div class="menu">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tenetur cumque voluptatibus saepe deleniti, perspiciatis dolores nostrum 
+                ducimus ratione omnis ea dolorem voluptatem
+                 quam eum inventore quisquam delectus consequuntur eligendi accusamus?</div>
+        </div>
+    </body>
+</html>

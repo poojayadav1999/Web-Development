@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Media Query</title>
+        <style>
+            .main{
+                   border: 1px solid;
+            }
+            .container1{
+                          border:1px solid;
+                          display: flex;
+                          }
+            .one{
+                  border:1px solid;
+                  height: 80px;
+                  width:80%;
+                  font-size: 50px;
+                  text-align: center;
+                  background-color:darkred;
+            }
+            .two{
+                  border:1px solid;
+                  height: 80px;
+                  width:20%;
+                  text-align: center;
+                  background-color: cornflowerblue;
+                }
+            .rrr{
+                  border: 1px solid;
+                  height: 38px;
+                  width:100%;
+                  text-align: center;
+                  font-weight: bold;
+            } 
+            .two>.rrr>a{
+                         color: black;
+                         font-size: 18px;
+            }
+            header{
+                     border:1px solid;
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: flex-end;
+                     align-items: center;
+                     background-color: darkcyan;
+                     font-weight: bold;
+            }
+            .new{
+                   border: 1px solid;
+                    height: 40px;
+                    width: 15%;
+                    text-align: center;
+            } 
+            header>.new>a{
+                          color:black;
+                          font-size: 20px;       
+            }
+            .container2,.container3{
+                           
+                            display: flex;
+                            flex-direction: row;
+            }
+            .last1{
+                    border: 1px solid;
+                    height: 300px;
+                    flex-grow: 1;
+                   
+            }
+            .last2{
+                    border: 1px solid;
+                    height: 300px;
+                    flex-grow: 1;
+                  
+            }
+            footer{
+                    border: 1px solid;
+                    height: 70px;
+                    text-align: right;
+                    font-weight: bold;
+                    background-color: darkgoldenrod;
+            }
+            footer>.first{
+                           font-size: 18px;
+                           margin-right: 10px;
+            }
+            a{
+                text-decoration: none;
+            }
+
+            @media screen and (max-width:800px) {
+                .container1{
+                             flex-direction: column;
+                            }
+                                   
+                .container1>.one,.container1>.two{               
+                          width:100%;
+                        } 
+                    }                
+             @media screen and (max-width:800px) {           
+                header{
+                             display: flex;
+                             flex-direction: column;
+                            }
+                header>.new{
+                              width: 100%;
+                }            
+                }  
+                @media screen and (max-width:800px) {           
+                .container2,.container3{
+                             display: flex;
+                             flex-direction: column;
+                            }
+                }           
+        </style>
+    </head>
+    <body>
+        <div class="main">
+
+
+        <div class="container1">
+            <div class="one">Saumya Institute</div>
+            <div class="two">
+                <div class="rrr"><a href="">Register</a></div>
+                <div class="rrr"><a href="">Login</a></div>
+            </div>
+        </div>
+
+        <header>
+           <div class="new"><a href="">Home</a></div>
+           <div class="new"><a href="">About</a></div>
+           <div class="new"><a href="">Course</a></div>
+           <div class="new"><a href="">Contact</a></div>
+           <div class="new"><a href="">Details</a></div>
+        </header>
+
+        <div class="container2">
+               <div class="last1"><img src="../Images/institute pic1.jpg" height="300px" width="750px"></div>
+               <div class="last2"><img src="../Images/institute pic3.jpg" height="300px" width="750px"></div>
+        </div>
+
+        <div class="container3">
+            <div class="last1"><img src="../Images/institute pic2.jpg" height="300px" width="750px"></div>
+            <div class="last2"><img src="../Images/institute pic4.jpg" height="300px" width="750px"></div>
+     </div>
+
+      <footer>
+          <div class="first">Email:</div>
+          <div class="first">Address:</div>
+      </footer>
+
+    </div>
+    </body>
+</html>

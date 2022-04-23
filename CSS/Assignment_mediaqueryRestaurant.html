@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment_Restaurant using Media Query</title>
+        <style>
+            .main{
+                   border:1px solid;
+                   height: 2000px;
+                   width: 1450px;
+                   background-color: blueviolet;
+                   margin-left: 30px;
+                }
+                .new{
+                    border:1px solid;
+                     height:150px;
+                     width:1400px;
+                     margin-left: 50px;
+                     margin-top: 30px;
+                }
+                header>div:hover{
+                                background-color: bisque;    
+                    }
+                 a{
+                     text-decoration: none;
+                     color: black;
+                 }   
+                .new1{
+                       margin-bottom: 20px;
+                      
+                       width:120px;
+                       height: 35px;
+                       margin-left: 50px;
+                       margin-top: 10px;
+                       background-color: yellow;
+                       text-align: center;
+                       padding-top: 8px;
+                }
+                header>div{
+                            border:1px solid;
+                            width: 220px;
+                            height: 40px;
+                            display:inline-block;
+                            margin-left: 20px;
+                            margin-left: 50px;
+                            background-color: yellow;
+                            text-align: center;
+                            font-size: 20px;
+                            padding-top: 15px;
+                            
+                         }
+                .set{
+                      border:1px solid;
+                      height: 380px;
+                      width: 1400px;
+                      margin-left: 50px;
+                      position: relative;
+                }  
+                .set1{
+                       border: 1px solid;
+                       height: 350px;
+                       width: 900px;
+                       margin-top: 10px;
+                       margin-left: 50px;
+                       float: left;
+                       position: absolute;
+                       background-image: url(../Images/th.jpg);
+                       background-repeat: no-repeat; 
+                       background-size:cover;
+                }  
+                .container1{
+                            border:1px solid;
+                            height:350px;
+                            width:440px;
+                            position: absolute;
+                            left:950px;
+                            top:10px;
+                }   
+                .f1{
+                       border: 1px solid;
+                       height: 40px;
+                       width: 200px;
+                       text-align: center;
+                       padding-top: 8px;
+                       font-size: 25px;
+                       color: black;
+                       font-weight: bold;
+                       margin-top: 80px;
+                       margin-left: 50px;
+                       background-color: yellow;
+                }
+                .f2{
+                       border: 1px solid;
+                       height: 30px;
+                       width: 150px;
+                       font-weight: bold;
+                       margin-left: 50px;
+                       background-color: yellow;
+                       
+                }
+                 .one{
+                       
+                        height: 140px;
+                        width:250px;
+                        text-align: center;
+                        margin-left: 80px;
+                        margin-top: 15px;
+                        background-color: yellow;
+                    }
+                    .two{
+                      
+                        height: 140px;
+                        width:250px;
+                        text-align: center;
+                        margin-left: 80px;
+                        margin-top: 15px;
+                        background-color: yellow;
+                    }
+                    .container2{
+                        border: 1px solid;
+                        margin-left: 50px;
+                   }
+                .first{
+                  border: 1px solid red;
+                  height: 200px;
+                  width: 250px;
+                  display: inline-block;
+                  margin-left: 80px;
+                  text-align: center;
+                  font-size: 18px;
+                  font-weight: bold;
+                  background-color: white;
+                 }
+                 .mid{
+                      border: 1px solid;
+                      height: 400px;
+                      width: 1350px;
+                      margin-left: 50px;
+                      margin-top: 10px;
+                      position: relative;
+                      background-color: white;
+                }
+                .pic{
+                      
+                     
+                      margin-top: 10px;
+                      margin-left: 50px;
+                      position: absolute;
+                }
+                .middle{
+                         
+                          position: absolute;
+                          left:500px;
+                          top:80px;
+                        
+                }
+                .aaa{
+                      margin-top: 50px;
+                      font-size: 25px;
+                }
+                .ccc{
+                       font-size: 20px;
+                       background-color:darkgoldenrod;
+                       width: 120px;
+                       height: 30px;
+                }
+                   
+
+                @media screen and (max-width:800px) {
+                    .new{
+                         height: 400px;
+                        }
+                    header{
+                           width:50%;
+                         }
+                   header>div{
+                               margin-bottom: 10px;
+                   }  
+                }
+                @media screen and (max-width:800px) {
+                    .set{
+                          width:50%;
+                             
+                        }
+                   .set1{
+                          width: 70%;
+                   }
+                   .container1{
+                               display: flex;
+                               flex-direction: column;
+                   }
+                   .container1>.one>.two{
+                                         width:50px;
+                   }
+                   
+                }
+              
+            @media screen and (max-width:800px) {
+                .container2{
+                            display: flex;
+                            flex-direction: column;
+                            
+                }
+                .container2>.first{
+                                  width: 300px;
+                                  margin: 5px;
+                                  margin-left: 140px;
+                }
+            }
+            @media screen and (max-width:700px) {
+                .mid{
+                     display: flex;
+                     flex-direction: column;
+                    }
+                .pic{
+                      width: 50%;
+                }
+                .middle{
+                        width: 50%;
+                }
+                  
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="new">
+                <div class="new1"><b>Menu</b></div>
+                <header>
+                        <div><b><a href="../CSS/box_sizing.html">TACOS</a></b></div>
+                        <div><b><a href="../CSS/boxmodel.html">BEERS</a></b></div>
+                        <div><b><a href="../CSS/cssfloat.html">WINES</a></b></div>
+                        <div><b><a href="../CSS/box_sizing.html">DESERTS</a></b></div>
+                        <div><b><a href="../CSS/boxmodel.html">RESERVATIONS</a></b></div>
+                </header>
+                </div>
+
+                <div class="set">
+                    <div class="set1">
+                        <p class="f1">Terry's Taco Joint</p>
+                        <p class="f2">Pretty Good Tacos!</p>
+                    </div>
+
+                    <div class="container1">
+                        <div class="one">
+                            <p class="ppp" style="font-size:35px;">$1.99</p>
+                                <p><b>Tacos</b></p>
+                       </div>
+       
+                       <div class="two">
+                           <p class="rrr" style="font-size:35px;">$3.99   </p>
+                               <p><b>Kombucha</b></p>
+                           </div>
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <div class="first"><img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Architecto, totam. Molestias cupiditate labore tempore,
+                     </p>
+                 </div>
+                    <div class="first"><img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Architecto, totam. Molestias cupiditate labore tempore,
+                    </p>
+                 </div>
+                    <div class="first"><img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Architecto, totam. Molestias cupiditate labore tempore,
+                    </p>
+                 </div>
+                    <div class="first"><img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Architecto, totam. Molestias cupiditate labore tempore,
+                    </p>
+                 </div>
+
+                 <div class="mid">
+                    <div class="pic"><img src="../Images/tacos.jpg" height="380px" width="600">
+                  </div>
+                   <div class="middle">
+                       <p class="aaa"><b>Featured Taco</b></p>
+                       <p class="bbb"><b>Slim Profile, easy to hold and loaded with cheese.<br>
+                          This is the one you have been waiting for</b></p>
+                        <p class="ccc">Learn More</p>
+                   </div>
+              </div>
+
+
+        </div>
+    </body>
+</html>

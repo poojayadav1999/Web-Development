@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query</title>
+        <style>
+            .main{
+                   border:1px solid;
+                   height: 800px;
+            }
+            header{
+                    border: 1px solid;
+                    height: 100px;
+                    display: flex;
+            }
+            header>.one{
+                          border: 1px solid;
+                           width: 20%;
+                           text-align: center;
+            }
+            @media screen and (max-width:900px) {
+                  header{
+                               display: flex;
+                               flex-direction:column ;
+                  } 
+                  header>.one{
+                               width:100%;
+                  }
+                }
+              
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div class="one">Tacos</div>
+                <div class="one">Tacos</div>
+                <div class="one">Tacos</div>
+                <div class="one">Tacos</div>
+                <div class="one">Tacos</div>
+            </header>
+        </div>
+    </body>
+</html>

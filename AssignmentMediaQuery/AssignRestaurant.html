@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment Restaurant</title>
+
+        <style>
+            .main{
+                   border:1px solid;
+                   height: 2800px;
+                   background-color: blueviolet;
+            }
+            header{
+                    border:1px solid;
+                    display: flex;
+                   
+            }
+            header>.one{ 
+                         border: 1px solid; 
+                         flex-grow: 2;
+                         margin: 10px;
+                         text-align: center;
+                         padding: 10px;
+                         font-weight: bold;
+                         font-size: 20px;
+                         background-color: yellow;
+            }
+            header>.one>a{
+                           color: black;
+                           text-decoration: none;
+            }
+            .container1{
+                          border: 1px solid; 
+                          display: flex;
+            }
+            .first{
+                    border:1px solid;
+                    height:400px;
+                    flex-grow: 1;
+                    background-image: url(../Images/th.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    align-items:flex-start;
+                    justify-content:center;
+                    flex-direction: column;
+                    
+            }
+            h2{
+                 border: 1px solid;
+                 background-color: yellow;
+                 width:200px;
+            }
+            h4{
+                 border: 1px solid;
+                 background-color: yellow;
+                 width:150px;
+            }
+            .second{
+                     border:1px solid;
+                     height:400px;
+                     flex-grow: 1;
+                     
+                     
+            }
+            .sec1{
+                    border: 1px solid;
+                    height: 200px;
+                    background-color: yellow;
+                   
+            }
+            .sec2{
+                    border: 1px solid;
+                    height: 200px;
+                    background-color: yellow;
+                   
+            }
+            .aaa{
+                   font-size: 45px;
+                   text-align: center;
+            }
+            .bbb{
+                  text-align: center;
+                  font-weight: bold;
+                  font-size: 20px;
+            }
+            .container2{
+                        
+                         display: flex;
+                         flex-direction: row;
+                         align-content: space-around;
+            }
+            .middle{
+                     border: 1px solid;
+                     height: 300px;
+                     flex-grow: 2;
+                     margin: 10px;
+                     background-color:antiquewhite;
+                     text-align: center;
+                      }
+            
+            .middle>.new,.set{
+                                text-align: center;
+            }
+            .new{
+                  font-weight: bold;
+                  font-size: 25px;
+            }
+            .container3{
+                         background-color:aliceblue;
+                         display:flex;
+                         
+            }
+            .top1{
+                    border: 1px solid green;
+                    height: 350px;
+                    flex-grow: 1;
+                    text-align: center;
+            }
+            .top2{
+                    border: 1px solid green;
+                    height: 350px;
+                    flex-grow: 1;
+            }
+            .h1{
+                 font-size: 40px;
+                 font-weight: bold;
+            }
+            .h2{
+                 font-size: 20px;
+                 font-weight: bold;
+            }
+            .h3{
+                 border:1px solid;
+                 height: 30px;
+                 width: 100px;
+                 background-color: yellow;
+                 text-align: center;
+            }
+            .container4{
+                         border: 1px solid;
+                         width: 100%;
+                         height: 45px;
+                         display: flex;
+                         flex-direction: row;
+                         
+            }
+            .container4>.s1{
+                             border-top: 15px solid yellow;
+                             width:50%;
+                             margin: 10px;
+            }
+            .container4>.s2{
+                             
+                             text-align: center;
+                            font-size: 20px;
+                            font-weight: bold;
+                            width: 20%;
+            }
+            
+            .container4>.s3{
+                             border-top: 15px solid yellow;
+                             width:50%;
+                             margin: 10px;
+            }
+            .container5,.container6,.container7{
+                                          background-color: blueviolet; 
+                                          display: flex;
+                                          flex-direction: row;
+                                          
+                        }
+             .last1{  
+                      border: 1px solid blue;
+                      height: 350px;
+                      flex-grow: 2;
+                      
+             }
+             .last2{  
+                      border: 1px solid blue;
+                      height: 350px;
+                      flex-grow: 2;
+                     
+             }
+             .last3{  
+                      border: 1px solid blue;
+                      height: 350px;
+                      flex-grow: 2;
+                     
+             }
+             
+            
+            @media screen and (max-width:800px) {
+                header{
+                        display: flex;
+                        flex-direction: column;
+                }
+            }
+            @media screen and (max-width:800px) {
+                .container1{
+                        display: flex;
+                        flex-direction:column;
+                }
+            }
+            @media screen and (max-width:800px) {
+                .container2{
+                        display: flex;
+                        flex-direction:column;
+                }
+                
+            }
+            @media screen and (max-width:800px) {
+                .container3{
+                        display: flex;
+                        flex-direction:column;
+                }
+            }
+            @media screen and (max-width:800px) {
+                .container5,.container6,.container7{
+                        display: flex;
+                        flex-direction:column;
+                        text-align: center;
+                }
+            }
+
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div class="one"><a href="">TACOS</a></div>
+                <div class="one"><a href="">BEERS</a></div>
+                <div class="one"><a href="">WINES</a></div>
+                <div class="one"><a href="">DESERTS</a></div>
+                <div class="one"><a href="">RESERVATIONS</a></div>
+            </header>
+
+            <div class="container1">
+                <div class="first">
+                   <h2>Terry's Taco Joint</h2>
+                   <h4>Pretty Good Tacos</h4>
+                </div>
+
+                <div class="second">
+                    <div class="sec1">
+                        <p class="aaa">$1.99</p>
+                        <p class="bbb">Tacos</p>
+                    </div>
+
+                    <div class="sec2">
+                        <p class="aaa">$3.99</p>
+                        <p class="bbb">Kombucha</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="middle">
+                    <img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                    <p class="new">Tacos</p>
+                    <p class="set">Lorem ipsum dolor sit amet consectetur .<br>
+                         Beatae debitis distinctio rerum, accu <br>
+                         magnam eaque dolorum asperiores doloremque <br>
+                     </p>
+                </div>
+
+                <div class="middle">
+                    <img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                    <p class="new">Tacos</p>
+                    <p class="set">Lorem ipsum dolor sit amet consectetur .<br>
+                         Beatae debitis distinctio rerum, accu <br>
+                         magnam eaque dolorum asperiores doloremque <br>
+                     </p>
+                </div>
+                <div class="middle">
+                    <img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                    <p class="new">Tacos</p>
+                    <p class="set">Lorem ipsum dolor sit amet consectetur .<br>
+                         Beatae debitis distinctio rerum, accu <br>
+                         magnam eaque dolorum asperiores doloremque <br>
+                     </p>
+                </div>
+                <div class="middle">
+                    <img src="../Images/pizzaimage.jpg" height="80px" width="80px">
+                    <p class="new">Tacos</p>
+                    <p class="set">Lorem ipsum dolor sit amet consectetur .<br>
+                         Beatae debitis distinctio rerum, accu <br>
+                         magnam eaque dolorum asperiores doloremque <br>
+                     </p>
+                </div>
+            </div>
+             
+            <div class="container3">
+                <div class="top1">
+                    <img src="../Images/tacos.jpg" height="350px" width="350px">
+                </div>
+                <div class="top2">
+                    <p class="h1">Featured Taco</p>
+                    <p class="h2">Slim Profile,easy to hold and loaded with cheese.<br>
+                                  This is the one you have been waiting for
+                    </p>
+                    <p class="h3">Learn More</p>
+                </div>
+            </div>
+            
+            <div class="container4">
+                <div class="s1"></div>
+                <div class="s2">Instant Grams</div>
+                <div class="s3"></div>
+            </div>
+
+            <div class="container5">
+                  <div class="last1"><img src="../Images/beachimg.jpg" height="350px" width="500px"></div>
+                  <div class="last2"><img src="../Images/naturepic2.jpg" height="350px" width="500px"></div>
+                  <div class="last3"><img src="../Images/naturepic1.jpg" height="350px" width="500px"></div>
+            </div>
+
+            <div class="container6">
+                <div class="last1"><img src="../Images/camerapic.jpg" height="350px" width="500px"></div>
+                <div class="last2"><img src="../Images/flowerpic.jpg" height="350px" width="500px"></div>
+                <div class="last3"><img src="../Images/naturepic4.jpg" height="350px" width="500px"></div>
+          </div>
+
+          <div class="container7">
+            <div class="last1"><img src="../Images/naturepic3.jpg" height="350px" width="500px"></div>
+            <div class="last2"><img src="../Images/naturepic5.jpg" height="350px" width="500px"></div>
+            <div class="last3"><img src="../Images/naturepic6.jpg" height="350px" width="500px"></div>
+      </div>
+
+
+
+        </div>
+    </body>
+</html>

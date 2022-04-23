@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Item Flex basis</title>
+        <style>
+            .main{
+                   border:1px solid;
+                   display: flex;
+            }
+            .sub{
+                  border:1px solid red;
+                  height: 200px;
+                  width: 200px;
+            }
+            .new{
+                  flex-basis: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="sub"></div>
+            <div class="sub new"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+        </div>
+    </body>
+</html>
