@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX Of TagName</title>
+    </head>
+    <body>
+        <div id="container">
+            <p>Pooja</p>
+            <p>Pratiksha</p>
+            <p>Amrita</p>
+        </div>
+             <p>Hello</p>
+             <p>Welcome</p>
+         <p id="demo"></p>
+
+         <script>
+             const x = document.getElementById('container');
+             console.log(x);
+             
+             const Y = x.getElementsByTagName('p');
+             console.log(Y);
+             const z = document.getElementById('demo');
+             z.innerHTML = Y[0].innerHTML;
+             //console.log(z);
+
+             let a = Y.length;
+             console.log(a);
+
+             debugger;
+             var str = " ";
+             for(i=0; i<a; i++){
+                //console.log(Y[i]);
+                const z = document.getElementById('demo');
+                z.innerHTML = Y[i].innerHTML;
+                str = str + z;
+                Y.innerHTML = str;  
+             }
+             
+
+            
+         </script>
+    </body>
+</html>

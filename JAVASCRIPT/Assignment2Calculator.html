@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 calculator</title>
+        <style>
+            button{
+            height: 50px;
+            width: 50px;
+            border:2px solid black;
+        
+            }
+        </style>
+        <script>
+            function view(num){
+                document.getElementById("result").value+=num;
+            }
+            function compute(){
+                let x = document.getElementById("result").value;
+                let y =eval(x);
+                document.getElementById("result").value=y;
+            }
+            function clr(){
+                document.getElementById("result").value="";
+            }
+        </script> 
+    </head>
+    <body>
+
+        <h1>Calculator</h1>
+        <table border="2px solid black;" style=border-collapse:collapse;>
+            <tr>
+                <td colspan="11"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="10" style="text-align:end;"><input type="textbox" id="result" name="text"></td>
+            </tr>
+            <tr>
+                <td><button>mod</button></td>
+                <td colspan="5">
+                <input type="radio" id="deg" name="deg">deg
+                <input type="radio" id="rad" name="deg">rad
+            </td>
+                <td><button>MC</button></td>
+                <td><button>MR</button></td>
+                <td><button>MS</button></td>
+                <td><button>M+</button></td>
+                <td><button>M-</button></td>
+                
+            </tr>
+
+            <tr>
+                <td><button>sinh</button></td>
+                <td><button>cosh</button></td>
+                <td><button>tanh</button></td>
+                <td><button>Exp</button></td>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                
+                <td colspan="2" style="background-color:hsl(0, 100%, 50%)"><button style="background-color:red; width:100px;"><-</button></td>
+                <td style="background-color:red"><button style="background-color:red;" onclick="clr()">C</button></td>
+                <td style="background-color:red"><button style="background-color:red;">+/-</button></td>
+                <td><button>&Sqrt;</button></td>
+            </tr>
+
+            <tr>
+                <td><button>sinh<sup>-1</sup></button></td>
+                <td><button>cosh<sup>-1</sup></button></td>
+                <td><button>tanh<sup>-1</sup></button></td>
+                <td><button>log<sub>2</sub>X</button></td>
+                <td><button>In</button></td>
+                <td><button>Log</button></td>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+                <td><button>%</button></td>
+             </tr>
+
+             <tr>
+                 <td><button>&pi;</button></td>
+                 <td><button>e</button></td>
+                 <td><button>n!</button></td>
+                 <td><button>log<sub>y</sub>x</td>
+                 <td><button>e<sup>x</sup></button></td>
+                 <td><button>10<sup>x</sup></button></td>
+                 <td><button>4</button></td>
+                 <td><button>5</button></td>
+                 <td><button>6</button></td>
+                 <td><button>*</button></td>
+                 <td><button>1/x</button></td>
+             </tr>
+
+             <tr>
+                 <td><button>sin</button></td>
+                 <td><button>cos</button></td>
+                 <td><button>tan</button></td>
+                 <td><button>x<sup>y</sup></button></td>
+                 <td><button>x<sup>3</sup></button></td>
+                 <td><button>x<sup>2</sup></button></td>
+                
+                 <td><button onclick="view('1')">1</button></td>
+                 <td><button onclick="view('2')">2</button></td>
+                 <td><button onclick="view('3')">3</button></td>
+                 <td><button onclick="view('-')">-</button></td>
+                 <td style=background-color:green; rowspan="2"><button style="background-color:green; height:100px" onclick="compute()">=</button></td>
+             </tr>
+
+             <tr>
+                 <td><button>sin<sup>-1</sup></button></td>
+                 <td><button>cos<sup>-1</sup></button></td>
+                 <td><button>tan<sup>-1</sup></button></td>
+                 <td><button>y &Sqrt;</button></td>
+                 <td><button>3 &Sqrt;</button></td>
+                 <td><button>|X|</button></td>
+                 <td colspan="2"><button style="width:100px">0</button></td>
+                 <td><button>.</button></td>
+                 <td><button>+</button></td>
+             </tr>
+        </table>
+    </body>
+</html>

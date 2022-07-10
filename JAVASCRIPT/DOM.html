@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Example</title>
+    </head>
+    <body>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+
+      
+
+     <script>
+        
+         console.log(document.body);
+         console.log(document.head);
+         console.log(document.body.DocumentElement);
+         console.log(document.body.children);
+
+         const Arr = Array.from(document.body.children);
+         console.log(Arr);
+
+         console.log(document.body.childNodes);
+         console.log(document.body.firstChild);
+         console.log(document.body.lastChild);
+         console.log(document.body.firstElementChild);
+         console.log(document.body.LastElementChild);
+     </script>
+    </body>
+</html>

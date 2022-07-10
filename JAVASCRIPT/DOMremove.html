@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Remove method</title>
+    </head>
+    <body>
+
+        <div id="parent">
+            <p id="one">demo 1</p>
+            <p id="two">demo 2</p>
+        </div>
+        <button onclick="change()">Click</button>
+        <script>
+           function change(){
+              var x = document.getElementById('two');
+               x.remove();
+           }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX</title>
+    </head>
+    <body>
+        <P id="one">Javascript</P>
+        <button onclick="document.getElementById('one').innerHTML='hello JS'">change content</button>
+
+        <p class="abc">Pooja</p>
+        <p class="abc">Yadav</p>
+        <p class="abc">Priya</p>
+          
+      
+
+
+       <script>
+           
+          const x = document.getElementsByClassName('abc');
+          let Y = x.length;
+          //console.log(Y);
+          //console.log(x[0]);
+          //console.log(x[1]);
+          for(let i=0; i<Y; i++){
+              //const z = document.getElementsByClassName('abc');
+              //z.innerHTML = x[i].innerHTML;
+              console.log(x[i]);
+          }
+
+
+
+        </script>
+    </body>
+</html>

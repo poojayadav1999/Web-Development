@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX of DOM Using form</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <form name="myform">
+            <label for="fname">fname</label>
+            <input type="text" name="fname"><br><br>
+            
+            <label for="mname">mname</label>
+            <input type="text" name="mname"><br><br>
+
+            <label for="lname">lname</label>
+            <input type="text" name="lname" ><br><br>
+            <button onclick="change()">submit</button>  
+        </form>
+       
+      <script>
+         
+            function change(){
+                 
+                var x = document.forms['myform']["fname"];
+                var y = x.value;
+                var d = document.forms['myform']["mname"];
+                var z = d.value;
+                var a = document.forms['myform']["lname"];
+                var b = a.value;
+                
+                if(y == ""){
+                    alert('enter first name');
+                    return false;
+                }else if(z == ""){
+                    alert('enter middle name');
+                    return false; 
+                }else if(b == ""){
+                    alert('enter last name');
+                    return false; 
+                }else{
+                    alert("form submitted");
+                }
+            }
+         
+      </script>
+    </body>
+</html>

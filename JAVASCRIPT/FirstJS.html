@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavasCRIPT</title>
+        <script src="Output.js"></script>
+        <script>
+              alert('Hiii'); 
+              window.prompt('Enter Your Name');
+              
+        </script>
+        
+    </head>
+    <body>
+       <p id="one">Welcome to Javascript</p>
+       <button onclick="document.getElementById('one').innerHTML='First Page JS'; onclick=document.getElementById('one').style='color:red';">Change Content</button> <br><br>
+       
+
+       <img id="two" src="../Images/20180510_115226.png" height="200px" width="200px"><br>
+       <button onclick="document.getElementById('two').src='../images/backimage.jpg';">Change pic</button>
+       <p id="new">Cascading style sheet</p>
+        <button onclick="change()">Change</button>
+
+       <script>
+       function change(){
+                    document.getElementById('new').innerHTML='Hyper Text markup language';
+                      
+       }
+    </script>
+    </body>
+</html>

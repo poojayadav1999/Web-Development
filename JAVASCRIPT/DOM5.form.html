@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Ex</title>
+        
+    </head>
+    <body>
+        <p>Enter a number between 1 to 10</p>
+        <div id="one">
+         <input type="text">   
+        <button type="submit" onclick="f1()">Submit</button>
+    </div>
+
+        <script>
+            function f1(){
+                const x = document.getElementById('one');
+                const y = x.value;
+                if(isNaN(x) || x < 1 || x > 10){
+                    alert('Input ok');
+                }
+               
+                 
+            }
+
+        </script>
+    </body>
+</html>
