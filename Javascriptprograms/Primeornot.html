@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime or not</title>
+    </head>
+    <body>
+        <script>
+            var prime = true;
+            var notprime = false;
+            var primeno;
+            var num = prompt('Enter number');
+            function f1(primeno){
+                for(let i=2;i<num; i++)
+                if(num%i==0)
+                  {
+                    return notprime ;
+                  } 
+                  else{
+                        return prime;
+                  }  
+              
+            }
+
+           console.log(f1(primeno));
+        </script>
+    </body>
+</html>

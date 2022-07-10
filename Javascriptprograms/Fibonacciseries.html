@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fibbonacci series</title>
+    </head>
+    <body>
+        <script>
+           function fibo(num){
+               var n1 = 0;
+               var n2 = 1;
+               var temp;
+               for(let i=0; i<num; i++){
+                   temp = n1 + n2;
+                   n1 = n2;
+                   n2 = temp;
+               }
+                 return n2;
+           }
+           const z = parseFloat(prompt('Enter a Number'));
+           console.log(fibo(z));
+        </script>
+    </body>
+</html>
