@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong no Program using getElementById</title>
+    <script>
+
+        function Armstrong(){
+        var num;
+        var sum=0;
+        var rem;
+       
+        
+        num = Number(document.getElementById('one').value);
+ 
+        var x=num;
+        
+        while(num>0)
+        {
+          rem=num%10;
+          sum=sum+(rem*rem*rem);
+          num=parseInt(num/10);
+        }
+       
+        if(x==sum)
+        {
+            alert("number is Armstrong");
+        }
+        else
+        {
+             alert("number is not Armstrong");
+        }
+     }   
+     </script>
+</head>
+<body>
+   
+    
+    Enter the No:
+    <input type="text" name="aaa" id="one"><br><br>
+    <hr color="blue">
+    <button onclick="Armstrong()">Check</button>
+
+</body>
+</html>

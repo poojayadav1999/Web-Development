@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong no Program</title>
+</head>
+<body>
+    <script>
+       var num=371;
+       var sum=0;
+       var rem;
+       var x=num;
+       
+       while(num>0)
+       {
+         rem=num%10;
+         sum=sum+(rem*rem*rem);
+         num=parseInt(num/10);
+       }
+      
+       if(x==sum)
+       {
+         document.write("number is Armstrong");
+       }
+       else
+       {
+          document.write("number is not Armstrong");
+       }
+       
+    </script>
+</body>
+</html>

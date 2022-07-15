@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse no program using getElementById</title>
+
+    <script>
+
+      function reverse(){ 
+        let num;
+        let revnum=0,rem;
+     
+        num = Number(document.getElementById('rev').value);
+        while(num>0)
+        {
+          rem = num%10;
+          revnum = (revnum*10)+rem;
+          num = parseInt(num/10);  
+        }
+      
+        alert(revnum);
+      }
+        
+    </script>
+
+</head>
+<body>
+    
+       Enter The number:<input type="text" name="reverse" id="rev"><br><br>
+       <button onclick="reverse()">Click</button>
+
+
+</body>
+</html>

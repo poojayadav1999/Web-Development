@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome no Program using getElementById</title>
+    <script>
+        function Palindrome()
+			{
+				var rem,sum = 0;
+				var num = Number(document.getElementById("new").value);
+
+				x = num;
+				while(num>0)
+				{
+					rem = num%10;
+					num = parseInt(num/10);
+					sum = sum*10+rem;
+				}
+				if(x==sum)
+				{
+					window.alert("Number is Palindrome");
+				}
+				else
+				{
+					window.alert("Number is not palindrome");
+				}
+			}
+       
+     </script>
+</head>
+<body>
+      
+    <br>
+    <h1>Whether a number is Palindrome or not</h1>
+    Enter The Number :<input type="text" id = "new"/>
+    <hr color="cyan">
+    <br>
+    <center><button onClick="Palindrome()">CHECK</button>
+
+</body>
+</html>

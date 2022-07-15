@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome no Program</title>
+</head>
+<body>
+     <script>
+        let num=121;
+        let rem;
+        let sum=0;
+        let x=num;
+        
+            while(num>0)
+            {
+               rem = num%10;
+               sum = (sum*10)+rem;
+               num = parseInt(num/10);
+            }
+            if(x==sum)
+            {
+                document.write("no. is palindrome");
+            }
+            else
+            {
+                document.write("no. is not palindrome");
+            }
+    
+     </script>
+</body>
+</html>

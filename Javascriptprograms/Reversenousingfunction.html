@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse no. program</title>
+
+    <script>
+
+      let num;
+      let revnum=0,rem;
+      num = parseInt(prompt("Enter the number"));
+
+      function reverse(num){
+         
+        while(num>0)
+        {
+          rem = num%10;
+          revnum = (revnum*10)+rem;
+          num = parseInt(num/10);  
+        }
+        //return revnum;
+        document.write("Reverse no is:" +revnum);
+      }
+     
+      reverse(num);
+      
+      
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
